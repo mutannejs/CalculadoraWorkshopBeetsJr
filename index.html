@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&amp;display=swap" rel="stylesheet">
+    <script type="text/javascript" src="./index.js" defer></script>
+    <link rel="stylesheet" type="text/css" href="./index.css">
+	<link rel="shortcut icon" href="img/favicon.ico" type="image/s-icon">
+    <title>Calculadora Workshp Beets Jr.</title>
+  </head>
+
+  <body>
+    <main>
+      <div class="calculadora">
+        <div class="visor">
+			<div class="operacao"></div>
+			<span class="numero_antigo"></span><br>
+			<span class="numero_atual">0</span>
+		</div>
+        <div class="teclas">
+			<!-- data-tiplo-tecla é um atributo que nós criamos, todos
+				atributos desse tipo tem seu nome iniciado por data-
+				Esse conceito é chamado dataset-->
+          <button data-tipo-tecla="operador" data-tecla="somar">+</button>
+          <button data-tipo-tecla="operador" data-tecla="subtrair">-</button>
+          <button data-tipo-tecla="operador" data-tecla="multiplicar">×</button>
+          <button data-tipo-tecla="operador" data-tecla="dividir">÷</button>
+          <button data-tipo-tecla="numero" class="zero">0</button>
+          <button data-tipo-tecla="numero" class="um">1</button>
+          <button data-tipo-tecla="numero" class="dois">2</button>
+          <button data-tipo-tecla="numero" class="tres">3</button>
+          <button data-tipo-tecla="numero" class="quatro">4</button>
+          <button data-tipo-tecla="numero" class="cinco">5</button>
+          <button data-tipo-tecla="numero" class="seis">6</button>
+          <button data-tipo-tecla="numero" class="sete">7</button>
+          <button data-tipo-tecla="numero" class="oito">8</button>
+          <button data-tipo-tecla="numero" class="nove">9</button>
+          <button data-tipo-tecla="numero" class="decimal">.</button>
+          <button data-tipo-tecla="numero" class="duplo-zero">00</button>
+          <button data-tipo-tecla="salvar" class="acao">MS</button>
+          <button data-tipo-tecla="recuperar" class="acao">MR</button>
+          <button data-tipo-tecla="limpar" class="acao">AC</button>
+          <button data-tipo-tecla="igual" class="acao">=</button>
+        </div>
+      </div>
+    </main>
+
+  </body>
+
+</html>
