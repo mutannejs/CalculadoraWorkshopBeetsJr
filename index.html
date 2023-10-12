@@ -15,12 +15,17 @@
   </head>
 
   <body>
+	<header>
+		<button class="tema" onclick="mudarTema()"><!--ion-icon name="moon"></ion-icon--><ion-icon name="sunny"></ion-icon></button>
+		<button class="manual" onclick="mostrarAjuda()"><ion-icon name="help-circle"></ion-icon></button>
+	</header>
     <main>
       <div class="calculadora">
         <div class="visor">
 			<div class="operacao"></div>
 			<span class="numero_antigo"></span><br>
 			<span class="numero_atual">0</span>
+			<ion-icon onclick="backspace()" class="backspace" name="backspace-outline"></ion-icon>
 		</div>
         <div class="teclas">
 			<!-- data-tiplo-tecla é um atributo que nós criamos, todos
@@ -49,6 +54,9 @@
         </div>
       </div>
     </main>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 
   </body>
 

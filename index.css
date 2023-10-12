@@ -1,6 +1,7 @@
 :root {
   --cor-fundo-calculadora-escuro: #1f201d;
   --cor-fundo-visor-escuro: #353840;
+  --cor-visor-botao-escuro-hover: #151515;
   --cor-fundo-numero-escuro: #272b2e;
   --cor-fundo-numero-escuro-hover: #50585e;
   --cor-numero-escuro: #fff;
@@ -8,16 +9,18 @@
   --cor-fundo-operador-escuro-hover: #0099ff;
   --cor-fundo-acoes-escuro: #d4e7fe;
   --cor-fundo-acoes-escuro-hover: #ffffff;
-  --cor-fundo-active: #c7a4c9;
-  --cor-active: #370044;
+  --cor-fundo-escuro-active: #c7a4c9;
+  --cor-escuro-active: #370044;
+  --cor-fundo-site-escuro: #aa67d6;
+}
 
+.light {
   --cor-fundo-calculadora-claro: #fffdfe;
   --cor-fundo-visor-claro: #e9f1fc;
   --cor-fundo-numero-claro: #f4f8fb;
   --cor-fundo-operador-claro: #c0e8fb;
   --cor-fundo-acoes-claro: #d1e4fb;
-
-  --cor-fundo-site: #74ebd5;
+  --cor-fundo-site-escuro-escuro: #74ebd5;
 }
 
 * {
@@ -35,10 +38,40 @@ html {
 
 body {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-color: var(--cor-fundo-site);
+  background-color: var(--cor-fundo-site-escuro);
+}
+
+header {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  padding: 0.5rem;
+  border-radius: 1rem;
+  background-color: var(--cor-fundo-operador-escuro);
+  box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.3);
+}
+
+.tema, .manual {
+  width: 3rem;
+  height: 3rem;
+  padding: 0.5rem;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.tema:hover, .manual:hover {
+  border-radius: 50%;
+  background-color: black;
+  color: var(--cor-fundo-operador-escuro);
+}
+
+.manual {
+  float: right;
+  margin-left: 1rem;
 }
 
 .calculadora {
@@ -56,6 +89,17 @@ body {
   font-size: 2rem;
   text-align: right;
   border-radius: 0 0 2rem 2rem;
+}
+
+.backspace {
+  padding: 0.5rem;
+  margin-left: -0.5rem;
+  margin-right: -0.5rem;
+  border-radius: 50%;
+}
+
+.backspace:hover {
+  background: var(--cor-visor-botao-escuro-hover);
 }
 
 .operacao {
@@ -186,7 +230,6 @@ body {
 
 [data-tipo-tecla="numero"]:hover {
   background-color: var(--cor-fundo-numero-escuro-hover);
-  color: var(--cor-numero-escuro);
 }
 
 .acao:hover {
@@ -195,6 +238,6 @@ body {
 
 [data-tipo-tecla="operador"]:active, [data-tipo-tecla="numero"]:active,
 .acao:active {
-  background-color: var(--cor-fundo-active);
-  color: var(--cor-active);
+  background-color: var(--cor-fundo-escuro-active);
+  color: var(--cor-escuro-active);
 }

@@ -46,7 +46,7 @@ teclas.addEventListener('click', (e) => {
 			numero_atual.textContent = valorNumAtual + valorTecla /* concatena o texto*/
 		}
 	}
-	
+
 	if (tipoTecla === 'operador') {
 		/* seleciona todos seletores com aquele dataset que estão dentro de teclas*/
 		const operadores = teclas.querySelectorAll('[data-tipo-tecla="operador"]')
@@ -108,3 +108,19 @@ teclas.addEventListener('click', (e) => {
 	/* estamos criando um novo tipo*/
 	calculadora.dataset.tipoTeclaAnterior = tipoTecla
 })
+
+function backspace() {
+	if (numero_atual.textContent.length > 1)
+		numero_atual.textContent = numero_atual.textContent.slice(0, -1);
+	else
+		numero_atual.textContent = '0'
+	calculadora.dataset.tipoTeclaAnterior = 'backspace'
+}
+
+function mudarTema() {
+	
+}
+
+function mostrarAjuda() {
+	
+}
