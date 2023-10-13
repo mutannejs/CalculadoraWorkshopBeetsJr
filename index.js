@@ -39,8 +39,13 @@ teclas.addEventListener('click', (e) => {
 			}
 		}
 		else if (tipoTeclaAnterior === 'igual') {
+			if (valorTecla === '00') {
+				numero_atual.textContent = '0'
+			}
+			else {
 				numero_atual.textContent = valorTecla
 				numero_antigo.textContent = valorNumAtual
+			}
 		}
 		else {
 			numero_atual.textContent = valorNumAtual + valorTecla /* concatena o texto*/
@@ -118,7 +123,7 @@ function backspace() {
 }
 
 function mudarTema() {
-	
+	document.body.classList.toggle('light')
 }
 
 function mostrarAjuda() {

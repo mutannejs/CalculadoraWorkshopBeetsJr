@@ -7,5 +7,4 @@ Vídeo do workshop: [https://www.youtube.com/live/MajCTloQHr4?si=sOzjHsQ0QUrqYst
 ## Problemas conhecidos
 
 - Teclar duas vezes no botão _igual_ não repete a operação;
-- Botão de tema ainda não está completo;
 - Botão de ajuda ainda não está completo.
