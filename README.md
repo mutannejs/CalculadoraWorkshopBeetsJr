@@ -1,14 +1,14 @@
 <div align="center">
 
-	<h1>Calculadora Web</h1>
+<h1>Calculadora Web</h1>
 
-	<img src="./preview.jpg" style="max-width:860px" alt="Preview da aplicação em funcionamento">
+<img src="./preview.jpg" style="max-width:800px" alt="Preview da aplicação em funcionamento">
 
-	<p>
-		Calculadora implementada usando HTML, CSS e JS, feita com base no workshop promovido pela Beets Jr.
-		<br>
-		Vídeo do workshop: <a href="https://www.youtube.com/live/MajCTloQHr4?si=sOzjHsQ0QUrqYst9" rel="nofollow" target="_blank">Workshup Beets Jr - Dia 1</a>
-	</p>
+<p>
+	Calculadora implementada usando HTML, CSS e JS, feita com base no workshop promovido pela Beets Jr.
+	<br>
+	Vídeo do workshop: <a href="https://www.youtube.com/live/MajCTloQHr4?si=sOzjHsQ0QUrqYst9" rel="nofollow" target="_blank">Workshup Beets Jr - Dia 1</a>
+</p>
 
 </div>
 
