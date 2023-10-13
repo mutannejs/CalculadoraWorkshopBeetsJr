@@ -82,7 +82,7 @@ body {
 
 .tema:hover, .manual:hover {
   border-radius: 50%;
-  background-color: black;
+  background-color: #000;
   color: var(--cor-fundo-operador);
 }
 
@@ -91,11 +91,63 @@ body {
   margin-left: 1rem;
 }
 
-.calculadora {
+.manual_expandido {
+  display: none;
+  position: fixed;
+  bottom: 1rem;
+  z-index: 1;
+  overflow: auto;
+  border: 1rem solid var(--cor-fundo-calculadora);
+  width: 34.5rem;
+  height: calc(100vh - 7rem);
+  padding: 1rem;
+  font-size: 1.5rem;
+  font-family: Arial, sans-serif;
+  color: var(--cor-numero);
+  text-align: justify;
+  animation: manual_animacao_expandir 1s forwards;
+}
+
+.manual_expandido > h1 {
+  font-size: 3rem;
+}
+
+.manual_expandido span {
+	font-weight: 800;
+	margin: 0 1rem;
+	text-shadow: 1px 1px 5px darkgray;
+}
+
+.manual_expandido p, .manual_expandido ul {
+	margin-bottom: 2rem;
+}
+
+@keyframes manual_animacao_expandir {
+	from {
+		right: -34.5rem;
+	}
+	to {
+		right: 1rem;
+	}
+}
+
+@keyframes manual_animacao_esconder {
+	from {
+		right: 1rem;
+	}
+	to {
+		right: -34.5rem;
+	}
+}
+
+.calculadora, .manual_expandido {
   box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.3);
   border-radius: 2em;
-  overflow: hidden;
   background-color: var(--cor-fundo-calculadora);
+}
+
+.calculadora {
+  overflow: hidden;
 }
 
 .visor {

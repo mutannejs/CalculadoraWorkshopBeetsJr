@@ -127,5 +127,13 @@ function mudarTema() {
 }
 
 function mostrarAjuda() {
-	
+	const manual = document.querySelector('.manual_expandido');
+	if (manual.style.display == 'block') {
+		manual.style.animation = 'manual_animacao_esconder 0.4s forwards'
+		setTimeout(()=> {manual.style.display = 'none'}, 400);
+	}
+	else {
+		manual.style.display = 'block'
+		manual.style.animation = null
+	}
 }
