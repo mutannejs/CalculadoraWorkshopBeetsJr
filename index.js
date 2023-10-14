@@ -123,7 +123,15 @@ function backspace() {
 }
 
 function mudarTema() {
-	document.body.classList.toggle('light')
+	const body = document.body
+	const botao_tema = document.getElementById('botao_tema');
+
+	body.classList.toggle('light')
+
+	if (body.classList.contains('light'))
+		botao_tema.name = 'moon'
+	else
+		botao_tema.name = 'sunny'
 }
 
 function mostrarAjuda() {

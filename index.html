@@ -17,7 +17,7 @@
   <body class="dark">
 
 	<div class="tema_ajuda">
-		<button class="tema" onclick="mudarTema()"><!--ion-icon name="moon"></ion-icon--><ion-icon name="sunny"></ion-icon></button>
+		<button class="tema" onclick="mudarTema()"><ion-icon id="botao_tema" name="sunny"></ion-icon></button>
 		<button class="manual" onclick="mostrarAjuda()"><ion-icon name="help-circle"></ion-icon></button>
 	</div>
 
@@ -26,6 +26,18 @@
 		<br>
 		<p>Informe um número pressionando as teclas númericas da calculadora, em seguida escolha uma das quatro operações clicando na sua respectiva tecla, informe o segundo número e tecle em <span>=</span> para ver o resultado da conta.</p>
 		<br>
+		<img src="img/operacao.gif" width="100%" alt="como realizar um cálculo usando o programa">
+		<p>
+			Caso tenha teclado o número errado, vc pode apagar seu último algarismo teclando no botão
+			<ion-icon name="backspace-outline"></ion-icon>.
+		</p><br>
+		<p>
+			Por padrão, a calculadora vêm em cores mais escuras, mas caso queira você pode mudar o tema do prgrama para claro clicando no botão
+			<ion-icon name="sunny"></ion-icon>,
+			e para voltar para o tema escuro basta clicar em
+			<ion-icon name="moon"></ion-icon>.
+		</p>
+		<br><br>
 		<h2>Teclas de ação</h2>
 		<br>
 		<ul style="margin-left: 2rem">
@@ -34,7 +46,7 @@
 			</li>
 			<br>
 			<li>
-				<strong>MR</strong>: Use para restaura o valor guardado utilizando a tecla <span>MS</span>;
+				<strong>MR</strong>: Use para restaurar o valor guardado utilizando a tecla <span>MS</span>;
 			</li>
 			<br>
 			<li>

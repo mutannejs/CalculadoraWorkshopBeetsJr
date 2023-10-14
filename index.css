@@ -118,8 +118,8 @@ body {
 	text-shadow: 1px 1px 5px darkgray;
 }
 
-.manual_expandido p, .manual_expandido ul {
-	margin-bottom: 2rem;
+.manual_expandido img, .manual_expandido ul {
+	margin-bottom: 3rem;
 }
 
 @keyframes manual_animacao_expandir {
